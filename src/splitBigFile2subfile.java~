@@ -15,7 +15,7 @@ public class splitBigFile2subfile {
 	public static void main(String[] args) throws IOException {
 		long start = System.currentTimeMillis();
 		
-		FileInputStream fs = new FileInputStream(args[0]);
+		FileInputStream fs = new FileInputStream("/media/xqcao/DC3C013E62AED233/ubuntuFile/wikipedia.txt");
 		FileChannel fc = fs.getChannel();
 		ByteBuffer buffer = ByteBuffer.allocate(500*1024*1024);
 		int i = 0;
@@ -26,7 +26,7 @@ public class splitBigFile2subfile {
 				break;
 			}
 			buffer.flip();
-			FileOutputStream fout = new FileOutputStream(args[1]+"wikipedia"+i+".txt");
+			FileOutputStream fout = new FileOutputStream("/media/xqcao/DC3C013E62AED233/ubuntuFile/temp"+"wikipedia"+i+".txt");
 			FileChannel fcout = fout.getChannel();
 			fcout.write(buffer);
 			i++;

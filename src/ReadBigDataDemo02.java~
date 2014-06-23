@@ -4,8 +4,8 @@ import java.io.IOException;
 
 
 public class ReadBigDataDemo02 {
-	static String filePath = args[0];
-	static String saveFile2txt = args[1];
+	static String filePath = "/media/xqcao/DC3C013E62AED233/ubuntuFile/temp/tempwikipedia0.txt";
+	static String saveFile2txt = "/media/xqcao/DC3C013E62AED233/ubuntuFile/temp/b.txt";
 	
 	
 	public static void main(String[] args) throws IOException{
